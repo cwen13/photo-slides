@@ -1,0 +1,31 @@
+* {
+}
+
+html {
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  height: 10rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 3.5rem;
+  
+}
+
+footer {
+  display: flex;
+  justify-content:center;
+}
+
+.flex-container {
+  width: 45rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} 
+
+button {
+  font-size: 2.5rem;
