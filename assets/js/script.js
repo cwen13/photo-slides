@@ -13,27 +13,32 @@ let imageIndex = 0;
 
 
 const pictures =
-      ["../photos/20220106_094054.jpg",
-       "../photos/DarkSynth.png",
-       "../photos/ElonDickRiders.jpg",
-       "../photos/FEClogo.png",
-       "../photos/GiantIceCube.webp",
-       "../photos/gitflow.jpg",
-       "../photos/money.jpg",
-       "../photos/The_Junto_Institute_Emotion_Wheel-1.jpeg",
-       "../photos/Tux.svg.png",
+      ["./assets/photos/20220106_094054.jpg",
+       "./assets/photos/DarkSynth.png",
+       "./assets/photos/ElonDickRiders.jpg",
+       "./assets/photos/FEClogo.png",
+       "./assets/photos/GiantIceCube.webp",
+       "./assets/photos/gitflow.jpg",
+       "./assets/photos/money.jpg",
+       "./assets/photos/The_Junto_Institute_Emotion_Wheel-1.jpeg",
+       "./assets/photos/Tux.svg.png",
+       "./assets/photos/space-dogs.jpg",
       ];
 
 function loadImage (imageFile) {
   imageEl.attr("src", imageFile);
+  imageEl.addClass("fit-picture");
+  return 0;
 }
 
 
 let goNext = () => {
-  imageEl.attr("src",pinctures[++inmageIndex]);
+  imageIndex = (imageIndex === pictures.length-1)? 0 : ++imageIndex;
+  imageEl.attr("src",pictures[imageIndex]);
 }
 let goBack = () => {
-  imageEl.attr("src",pinctures[--inmageIndex]);
+  imageIndex = (imageIndex !== 0)? --imageIndex : pictures.length - 1;
+  imageEl.attr("src",pictures[imageIndex]);
 }
 let thisOne = () => {
 // need to ahve picture grow to fill the page
@@ -41,7 +46,7 @@ let thisOne = () => {
 }
 
 
-//loadImage(pictures[0]);
+loadImage(pictures[0]);
 nextBut.on("click", goNext);
 backBut.on("click", goBack);
 middleBut.on("click", thisOne);
