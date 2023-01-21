@@ -20,6 +20,18 @@ footer {
   justify-content:center;
 }
 
+.main-canvas {
+  display: flex;
+  justify-content: center;
+  height: 50rem;
+}
+
+.picture-image {
+  justify-content: center;
+  width: 40rem;;
+  height: auto;
+}
+
 .flex-container {
   width: 45rem;
   display: flex;
