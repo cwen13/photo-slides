@@ -41,7 +41,7 @@ let thisOne = () => {
 }
 
 
-loadImage(pictures[0]);
+//loadImage(pictures[0]);
 nextBut.on("click", goNext);
 backBut.on("click", goBack);
 middleBut.on("click", thisOne);
