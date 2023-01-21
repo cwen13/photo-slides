@@ -27,7 +27,7 @@
     <main> 
       <section class="main-canvas">
 	<!-- This is where there wil be a slide show with buttons on the bottom-->
-	  <img src="" alt=""/>
+	  <img class="fit-picture" src="" alt=""/>
       <section>
     </main>
     <footer>
