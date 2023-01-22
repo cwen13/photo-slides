@@ -42,7 +42,7 @@ let goBack = () => {
 }
 let thisOne = () => {
 // need to ahve picture grow to fill the page
-
+  
 }
 
 
